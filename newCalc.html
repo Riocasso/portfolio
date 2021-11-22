@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+<head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	
+	
+<style>
+	
+	body {
+	margin-top: 80px;
+	transform: scale(1.5);
+	background-color:rgba(221,202,175,1.00);
+	
+	}	
+	
+
+.operator1 {
+	width: 50px;
+	height: 100px; 
+	border: 0px; 
+	color: black;
+	background-color: rgba(28,52,151,1.00 );
+	text-align: center;
+	font-size: 30px;
+	font-family: 'Bebas Neue', cursive;
+	}
+
+.operator2 {
+	width: 50px;
+	height: 100px; 
+	border: 0px; 
+	color: black;
+	background-color: rgba(28,52,151,1.00 );
+	text-align: center;
+	font-size: 30px;
+	font-family: 'Bebas Neue', cursive;
+	}
+.operator3 {
+	width: 50px;
+	height: 100px; 
+	border: 0px; 
+	color: black;
+	background-color: rgba(28,52,151,1.00 );
+	text-align: center;
+	font-size: 30px;
+	font-family: 'Bebas Neue', cursive;
+	}
+.operator4 {
+	position: relative;
+	width: 50px;
+	height: 100px; 
+	border: 0px;
+	margin-left: -1px;
+	color: black;
+	background-color: rgba(28,52,151,1.00 );
+	text-align: center;
+	font-size: 30px;
+	font-family: 'Bebas Neue', cursive;
+	}
+	
+.operator5 {
+	font-size: 50px;
+	background-color: rgba(156,109,177,1.00);
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
+	border: 0px;
+	margin-left: 250px;
+	margin-top: 10px;
+	font-family: 'Bebas Neue', cursive;
+	}
+	
+.operator6 {
+	width: 50px;
+	height: 101px; 
+	border: 0px; 
+	padding: 0px;
+	color: black;
+	background-color: rgba(1,145,117,1.00);
+	text-align: center;
+	font-size: 30px;
+	float: left;
+	font-family: 'Bebas Neue', cursive;
+	}
+
+#display {
+	background-color: white;
+	width: 489px;
+	height: 100px;
+	text-align: left;
+	border: 0px;
+	padding-left: 10px;
+	padding-bottom: 0px;
+	clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 100%, 75% 0);
+	font-size: 50px;
+	color: black;
+	font-family: 'Bebas Neue', cursive;
+	
+	}
+#myCalculator {
+	margin-left: calc(50% - 300px);
+	}
+	
+.number {
+	font-size: 50px;
+	background-color: rgba(232,8,44,1.00);
+	height: 100px;
+	width: 50px;
+	border: 0px;
+	text-align: center;
+	font-family: 'Bebas Neue', cursive;
+	}	
+.inputRow {
+	margin:0px;
+	padding: 0px;
+	font-size: 0px;
+	}
+.operator1:hover{
+	background-color: rgba(232,8,44,1.00);
+    }	
+.operator2:hover{
+	background-color: rgba(232,8,44,1.00);
+    }	
+.operator3:hover{
+	background-color: rgba(232,8,44,1.00);
+    }
+.operator4:hover{
+	background-color: rgba(232,8,44,1.00);
+    }
+.operator5:hover{
+	background-color: rgba(1,145,117,1.00);
+    }
+.operator6:hover{
+	background-color: rgba(156,109,177,1.00);
+    }
+.number:hover{
+	background-color:rgba(28,52,151,1.00 );	
+	}
+	
+
+
+	
+	
+	
+</style>
+<meta charset="utf-8">
+<title>newCalc</title>
+</head>
+	
+	
+<!--start of calcuator-->
+<body>	
+<form name="calculator">
+	
+<div id="myCalculator">
+	
+<div class="inputRow">
+<input type="button" class="operator1" name="subtract" value="-" onclick="calculator.display.value +='-'">
+<input type="button" class="operator2" name="add" value="+" onclick="calculator.display.value +='+'">
+<input type="button" class="operator3" name="divide" value="/" onclick="calculator.display.value +='/'">
+<input type="button" class="operator4" name="multiply" value="*" onclick="calculator.display.value +='*'">
+<input type="button" class="operator5" name="clear" value="AC" onclick="calculator.display.value = ' '">
+</div>
+
+<div class="inputRow">
+<input type="button" class="operator6" name="equals" value="=" onclick="calculator.display.value = eval(calculator.display.value)">	
+</div>
+
+<div id="midDisplay">
+<input type="text" name="display" id="display" disabled>
+</div>
+
+<div class="inputRow">
+<input type="button" class="number" value="." onclick="calculator.display.value+='.'">
+<input type="button" class="number" value="0" onclick="calculator.display.value+='0'">
+<input type="button" class="number" value="1" onclick="calculator.display.value+='1'">
+<input type="button" class="number" value="2" onclick="calculator.display.value+='2'">
+<input type="button" class="number" value="3" onclick="calculator.display.value+='3'">
+<input type="button" class="number" value="4" onclick="calculator.display.value+='4'">
+<input type="button" class="number" value="5" onclick="calculator.display.value+='5'">
+<input type="button" class="number" value="6" onclick="calculator.display.value+='6'">
+<input type="button" class="number" value="7" onclick="calculator.display.value+='7'">
+<input type="button" class="number" value="8" onclick="calculator.display.value+='8'">
+<input type="button" class="number" value="9" onclick="calculator.display.value+='9'">
+
+	
+	
+</div>
+	
+	
+</div>
+</form>
+</body>
+</html>

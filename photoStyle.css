@@ -1,0 +1,73 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Reset browser default styles: */
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  font-weight: normal;
+  list-style: none;
+}
+
+/* border-box so that border widths aren't added to the total width of the element: */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Clearfix to make floated elements behave correctly: */
+  .cf:before, .cf:after { content: ""; display: table; }
+  .cf:after { clear: both; }
+  .cf { zoom: 1; }
+  .clear { clear: both; }
+  
+a:focus,
+a:active {
+	outline: none;
+}
+
+/* In order for the percentage heights to work we need this: */
+html, body { height:100%; }
+
+
+/*start of style*/
+
+
+img {
+	width: 100%;
+	height: auto;
+}
+.container {
+	width: 90%;
+	margin: 30px auto 30px auto;
+}
+.poster12 {
+	width: 48.001%;
+	float: left;
+	margin: 25px 0% 0px 2%;
+	
+}
+
+.poster34 {
+	width: 48.001%;
+	float: left;
+	margin: 25px 0% 0px 2%;
+	
+}
+
+.poster5 {
+	width: 98%;
+	float: left;
+	margin: 25px 0% 0px 2%;
+	
+}
+
+
+
+
+
+
